@@ -2,7 +2,9 @@
 *_a configurable secure openLDAP based container_*
 
 ldapdock init using common docker parameters
-![ldapdock](/media/output.gif)
+<p align="left">
+  <img src="/media/output.gif" width="800" alt="ldapdock demo">
+</p>
 
 phpLDAPadmin automated setup
 ![ldapdock](/media/phpldapdock.png)
