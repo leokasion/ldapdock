@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  ldap:
+    # Tells Compose to build the image from the Dockerfile in the current directory
+    build:
+      context: .
+      args:
+        - LDAP_HOST=example.com
+    image: ldapdock
+    container_name: ldapdock
+    hostname: example.com
+    stdin_open: true # Equivalent of -i
+    tty: true        # Equivalent of -t
+    ports:
+      - "389:389"
+      - "636:636"
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ldap_data:/var/lib/ldap
+      - ldap_config:/etc/ldap/slapd.d
+      - ldap_certs:/etc/ldap/certs
+      - ./hosts-certs:/export-certs
+
+volumes:
+  ldap_data:
+  ldap_config:
+  ldap_certs:
