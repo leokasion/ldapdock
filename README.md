@@ -2,6 +2,7 @@
 *_a configurable secure openLDAP based container_*
 
 Step by step approach on how to setup and run an openLDAP server on a systemd-less docker image container
+![ldapdock](media/ldapdock.gif)
 
 ## _1- Creating the ldapdock image container_
 
