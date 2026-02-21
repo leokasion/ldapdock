@@ -1,9 +1,14 @@
 # ldapdock
 *_a configurable secure openLDAP based container_*
 
+ldapdock init using common docker parameters
 ![ldapdock](/media/output.gif)
 
+phpLDAPadmin automated setup
 ![ldapdock](/media/phpldapdock.png)
+
+strong TLS and SSL security implemented
+![ldapdock](/media/ldapssl.png)
 
 Step by step approach on how to setup and run an openLDAP server on a systemd-less docker image container
 
