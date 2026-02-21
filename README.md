@@ -10,7 +10,7 @@ build ldapdock from the dockerfile and run into it, creating the proper volumes 
 ```
 > docker build -t ldapdock --build-arg LDAP_HOST=example.com .
 ```
-do a "nuclear clean" of our volumes (except the export cert) since we are building again
+do a "nuclear clean" of our volumes (except the export cert)
 ```
 > sudo rm -rf ldap_data/* ldap_config/* ldap_certs/*
 ```
