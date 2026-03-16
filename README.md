@@ -12,17 +12,22 @@ Dynamic quick test
 ```
 sudo docker run --rm okasion1/ldapdock:latest cat /etc/os-release
 ```
+![ldapdock demo](media/output.gif)
 
 Access Information:
-Web UI: https://localhost/phpldapadmin
-Login DN: cn=admin,dc=example,dc=com
-Password: admin (Default)
+Web UI: https://localhost/phpldapadmin \
+Login DN: cn=admin,dc=example,dc=com \
+Password: admin (Default) 
+
+![ldapdock demo](media/phpldapdock.png)
 
 🛠️ Features
 
-Base Image: Debian 12 (Bookworm) - chosen for stable TLS libraries.
-Automated Security: Generates 4096-bit RSA CA and TLS certificates on first boot.
-Lightweight: Systemd-less design optimized for container environments.
+Base Image: Debian 12 (Bookworm) - chosen for stable TLS libraries. \
+Automated Security: Generates 4096-bit RSA CA and TLS certificates on first boot. \
+Lightweight: Systemd-less design optimized for container environments. 
+
+![ldapdock demo](media/ldapssl.png)
 
 ---
 
