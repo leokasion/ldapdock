@@ -1,17 +1,33 @@
 # ldapdock
-*_a configurable secure openLDAP based container_*
+*_Automated security hardened OpenLDAP & phpLdapAdmin on Debian 12 container ready to go_*
 
-ldapdock init using common docker parameters
-<p align="left">
-  <img src="/media/output.gif" width="800" alt="ldapdock demo">
-</p>
+🚀 Quick Start
 
-phpLDAPadmin automated setup
-![ldapdock](/media/phpldapdock.png)
+Full Deployment
+```
+docker run -d -p 389:389 -p 636:636 -p 80:80 --name ldapdock okasion1/ldapdock:latest
+```
 
-strong TLS and SSL security implemented
-![ldapdock](/media/ldapssl.png)
+Dynamic quick test
+```
+sudo docker run --rm okasion1/ldapdock:latest cat /etc/os-release
+```
 
+Access Information:
+Web UI: https://localhost/phpldapadmin
+Login DN: cn=admin,dc=example,dc=com
+Password: admin (Default)
+
+🛠️ Features
+
+Base Image: Debian 12 (Bookworm) - chosen for stable TLS libraries.
+Automated Security: Generates 4096-bit RSA CA and TLS certificates on first boot.
+Lightweight: Systemd-less design optimized for container environments.
+
+---
+
+  
+# _ldapdock from source_
 Step by step approach on how to setup and run an openLDAP server on a systemd-less docker image container
 
 ## _1- Creating the ldapdock image container_
